@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.amber,
-        cursorColor: Colors.red,
-        textSelectionColor: Colors.black
+          primarySwatch: Colors.amber,
+          cursorColor: Colors.red,
+          textSelectionColor: Colors.black
       ),
       home: const MyHomePage(title: 'Codenteq'),
     );
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
 
   String? _token;
-  String initialUrl = 'https://driver-license.arsivpro.com/';
+  String initialUrl = 'https://drive-course-app.codenteq.com/';
 
   var appBarTitleText = '';
 
@@ -88,13 +88,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: (
-          IconButton(
-            icon: Icon(Icons.arrow_back),
-            color: Color(0xffffffff),
-            onPressed: () async {
-              _controller.goBack();
-            },
-          )
+            IconButton(
+              icon: Icon(Icons.arrow_back),
+              color: Color(0xffffffff),
+              onPressed: () async {
+                _controller.goBack();
+              },
+            )
         ),
         title: Text(
           appBarTitleText,
